@@ -22,10 +22,11 @@ export default function Home() {
           <span className="font-light italic ml-2">Club de Arte</span>
         </div>
         <nav className="hidden sm:flex gap-8">
-          <a href="#" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Inicio</a>
-          <a href="#" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Talleres</a>
-          <a href="#" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Galería</a>
-          <a href="#" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Contacto</a>
+          <a href="/" className="text-[#845e3f] dark:text-[#d3b88c] transition-colors">Inicio</a>
+          <a href="/cursos" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Cursos</a>
+          <a href="/clases" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Clases</a>
+          <a href="/galeria" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Galería</a>
+          <a href="/contacto" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Contacto</a>
         </nav>
       </header>
 
@@ -128,9 +129,9 @@ export default function Home() {
             <p className="opacity-70">Un espacio para crear y conectar con el arte</p>
           </div>
           <div className="flex gap-8">
-            <a href="#" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Instagram</a>
-            <a href="#" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Facebook</a>
-            <a href="#" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">WhatsApp</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Instagram</a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Facebook</a>
+            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">WhatsApp</a>
           </div>
           <div className="opacity-70">
             © {new Date().getFullYear()} La Comarca Club de Arte
