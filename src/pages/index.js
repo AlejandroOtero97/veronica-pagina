@@ -92,7 +92,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold mb-10 text-center">Lo que dicen nuestros artistas</h2>
             <div className="max-w-4xl mx-auto">
               <blockquote className="italic text-lg text-center">
-                "La Comarca ha sido un descubrimiento maravilloso para mí. No solo he aprendido nuevas técnicas, sino que he encontrado una comunidad que me inspira cada día a seguir creando."
+                &ldquo;La Comarca ha sido un descubrimiento maravilloso para mí. No solo he aprendido nuevas técnicas, sino que he encontrado una comunidad que me inspira cada día a seguir creando.&rdquo;
                 <footer className="mt-4 font-normal text-base opacity-70">María González, pintora</footer>
               </blockquote>
             </div>
