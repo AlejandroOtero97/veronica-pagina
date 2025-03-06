@@ -108,7 +108,7 @@ export default function Galeria() {
     : galleryItems.filter(item => item.category === selectedCategory);
 
   return (
-    <section className="flex flex-col gap-8 max-w-5xl mx-auto">
+    <section className="flex flex-col gap-8 max-w-5xl mx-auto" style={{ backgroundColor: 'var(--color-background)' }}>
       <Head>
         <title>Galería | La Comarca Club de Arte</title>
         <meta name="description" content="Galería de obras de arte de nuestros estudiantes y profesores" />
@@ -216,29 +216,12 @@ export default function Galeria() {
           </p>
           <Link 
             href="/contacto" 
-            className="inline-block rounded-full bg-[#845e3f] hover:bg-[#6e4e35] dark:bg-[#d3b88c] dark:hover:bg-[#c0a678] text-white dark:text-[#2c2416] px-8 py-3 transition-colors"
+            className="inline-block rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] text-white px-8 py-3 transition-colors"
           >
             Háblanos de tu obra
           </Link>
         </section>
       </main>
-
-      <footer className="px-8 py-10 sm:px-20 border-t border-[#d3c7b1]/30 dark:border-[#5d4f3a]/30 text-sm">
-        <div className="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-6">
-          <div className="text-center sm:text-left">
-            <div className="font-bold mb-2">La Comarca <span className="font-light italic">Club de Arte</span></div>
-            <p className="opacity-70">Un espacio para crear y conectar con el arte</p>
-          </div>
-          <div className="flex gap-8">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Instagram</a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Facebook</a>
-            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">WhatsApp</a>
-          </div>
-          <div className="opacity-70">
-            © {new Date().getFullYear()} La Comarca Club de Arte
-          </div>
-        </div>
-      </footer>
     </section>
   );
 }

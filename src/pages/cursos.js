@@ -47,7 +47,7 @@ const courses = [
 
 export default function Cursos() {
   return (
-    <section className="flex flex-col gap-8 max-w-5xl mx-auto">
+    <section className="flex flex-col gap-8 max-w-5xl mx-auto" style={{ backgroundColor: 'var(--color-background)' }}>
       <Head>
         <title>Cursos | La Comarca Club de Arte</title>
         <meta name="description" content="Explora nuestra selección de cursos de arte" />
@@ -69,7 +69,7 @@ export default function Cursos() {
                 key={course.id} 
                 className="border border-[#d3c7b1]/30 dark:border-[#5d4f3a]/30 rounded-xl overflow-hidden hover:shadow-lg transition-all"
               >
-                <div className="aspect-video w-full bg-black">
+                <div className="aspect-video w-full bg-[var(--color-background)]">
                   <iframe 
                     className="w-full h-full"
                     src={`https://www.youtube.com/embed/${course.videoId}`} 
@@ -110,35 +110,18 @@ export default function Cursos() {
             ))}
           </div>
           
-          <div className="mt-16 p-8 bg-[#845e3f]/5 dark:bg-[#d3b88c]/5 rounded-xl text-center">
+          <div className="mt-16 p-8 bg-[var(--color-primary)]/5 rounded-xl text-center">
             <h2 className="text-2xl font-bold mb-4">¿No encuentras lo que buscas?</h2>
             <p className="mb-6">Contamos con más cursos disponibles y también ofrecemos programas personalizados.</p>
             <Link 
               href="/contacto" 
-              className="inline-block rounded-full bg-[#845e3f] hover:bg-[#6e4e35] dark:bg-[#d3b88c] dark:hover:bg-[#c0a678] text-white dark:text-[#2c2416] px-8 py-3 transition-colors"
+              className="inline-block rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] text-white px-8 py-3 transition-colors"
             >
               Consultar opciones
             </Link>
           </div>
         </section>
       </main>
-
-      <footer className="px-8 py-10 sm:px-20 border-t border-[#d3c7b1]/30 dark:border-[#5d4f3a]/30 text-sm">
-        <div className="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-6">
-          <div className="text-center sm:text-left">
-            <div className="font-bold mb-2">La Comarca <span className="font-light italic">Club de Arte</span></div>
-            <p className="opacity-70">Un espacio para crear y conectar con el arte</p>
-          </div>
-          <div className="flex gap-8">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Instagram</a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Facebook</a>
-            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">WhatsApp</a>
-          </div>
-          <div className="opacity-70">
-            © {new Date().getFullYear()} La Comarca Club de Arte
-          </div>
-        </div>
-      </footer>
     </section>
   );
 }

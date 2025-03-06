@@ -321,7 +321,7 @@ export default function Contacto() {
                 href="https://goo.gl/maps/your-custom-link-here" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center text-[#845e3f] dark:text-[#d3b88c] font-medium mt-2"
+                className="inline-flex items-center text-[var(--color-primary)] hover:text-[var(--color-secondary)] font-medium mt-2 transition-colors"
               >
                 Cómo llegar
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
@@ -332,23 +332,6 @@ export default function Contacto() {
           </div>
         </section>
       </main>
-
-      <footer className="px-8 py-10 sm:px-20 border-t border-[#d3c7b1]/30 dark:border-[#5d4f3a]/30 text-sm">
-        <div className="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-6">
-          <div className="text-center sm:text-left">
-            <div className="font-bold mb-2">La Comarca <span className="font-light italic">Club de Arte</span></div>
-            <p className="opacity-70">Un espacio para crear y conectar con el arte</p>
-          </div>
-          <div className="flex gap-8">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Instagram</a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Facebook</a>
-            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">WhatsApp</a>
-          </div>
-          <div className="opacity-70">
-            © {new Date().getFullYear()} La Comarca Club de Arte
-          </div>
-        </div>
-      </footer>
     </section>
   );
 }

@@ -7,9 +7,9 @@ export default function Footer() {
           <p className="opacity-70">Un espacio para crear y conectar con el arte</p>
         </div>
         <div className="flex gap-8">
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-secondary)] transition-colors">Instagram</a>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-secondary)] transition-colors">Facebook</a>
-          <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-secondary)] transition-colors">WhatsApp</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-[var(--color-primary)] hover:text-[var(--color-secondary)] transition-colors">Instagram</a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-[var(--color-primary)] hover:text-[var(--color-secondary)] transition-colors">Facebook</a>
+          <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="text-[var(--color-primary)] hover:text-[var(--color-secondary)] transition-colors">WhatsApp</a>
         </div>
         <div className="opacity-70">
           © {new Date().getFullYear()} La Comarca Club de Arte
