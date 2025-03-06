@@ -108,27 +108,12 @@ export default function Galeria() {
     : galleryItems.filter(item => item.category === selectedCategory);
 
   return (
-    <div
-      className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-[#f8f5f2] dark:bg-[#1a1814] text-[#2c2416] dark:text-[#f0ebe3] font-[family-name:var(--font-geist-sans)]`}
-    >
+    <section className="flex flex-col gap-8 max-w-5xl mx-auto">
       <Head>
         <title>Galería | La Comarca Club de Arte</title>
         <meta name="description" content="Galería de obras de arte de nuestros estudiantes y profesores" />
       </Head>
 
-      <header className="px-8 py-6 sm:px-20 sm:py-8 flex justify-between items-center border-b border-[#d3c7b1]/30 dark:border-[#5d4f3a]/30">
-        <div className="text-2xl font-bold">
-          <span className="text-[#845e3f] dark:text-[#d3b88c]">La Comarca</span>
-          <span className="font-light italic ml-2">Club de Arte</span>
-        </div>
-        <nav className="hidden sm:flex gap-8">
-          <Link href="/" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Inicio</Link>
-          <Link href="/cursos" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Cursos</Link>
-          <Link href="/clases" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Clases</Link>
-          <Link href="/galeria" className="text-[#845e3f] dark:text-[#d3b88c] transition-colors">Galería</Link>
-          <Link href="/contacto" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Contacto</Link>
-        </nav>
-      </header>
 
       <main className="px-8 py-12 sm:px-20 sm:py-16">
         <section className="max-w-7xl mx-auto">
@@ -254,6 +239,6 @@ export default function Galeria() {
           </div>
         </div>
       </footer>
-    </div>
+    </section>
   );
 }
