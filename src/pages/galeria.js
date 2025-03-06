@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Link from "next/link";
-import Image from "next/image";
 import { useState } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 
@@ -168,12 +167,9 @@ export default function Galeria() {
                 className="cursor-pointer group"
               >
                 <div className="aspect-[4/3] overflow-hidden rounded-lg bg-black/10 dark:bg-white/5 relative">
-                  {/* Using regular img with width/height since these are external URLs */}
                   <img 
                     src={item.image} 
                     alt={item.title} 
-                    width={800}
-                    height={600}
                     className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
@@ -208,8 +204,6 @@ export default function Galeria() {
                   <img 
                     src={selectedItem.image} 
                     alt={selectedItem.title}
-                    width={1200}
-                    height={900}
                     className="w-full object-contain max-h-[70vh]" 
                   />
                   <button 
