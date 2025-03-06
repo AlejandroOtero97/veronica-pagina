@@ -29,17 +29,17 @@ const courses = [
     description: "Aprende los fundamentos de la acuarela desde cero. Exploraremos técnicas básicas, mezcla de colores y composición para crear hermosas obras.",
     price: "$90.000",
     duration: "6 semanas",
-    videoId: "3kojEoKgrTY",
+    videoId: "kXLgNshy5Zc",
     level: "Principiante",
     instructor: "Veronica Garcia"
   },
   {
     id: 3,
-    title: "Testeo Video 3 Privado-1 hora",
+    title: "Testeo Video 3 Oculto-1 hora",
     description: "Un curso intensivo sobre anatomía humana para artistas. Enfocado en proporciones, estructura muscular y expresividad en el dibujo de figura.",
     price: "$140.000",
     duration: "10 semanas",
-    videoId: "pMAhE5iR9OA",
+    videoId: "hMEhryEPDwY",
     level: "Avanzado",
     instructor: "Veronica Garcia"
   },

@@ -1,40 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+La Comarca Club de Arte 🎨✨
 
-## Getting Started
+Bienvenido al repositorio oficial de La Comarca Club de Arte, la plataforma de arte creada por Veronica Andrea Garcia, profesora con más de 20 años de trayectoria.
 
-First, run the development server:
+📌 Sobre el Proyecto
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+La Comarca Club de Arte es un espacio donde el arte se encuentra con la creatividad, ofreciendo contenido exclusivo para artistas y amantes del arte.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Características
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+🎥 Videos de clases online (próximamente)
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+🖼️ Galería de imágenes de trabajos y proyectos
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+📝 Cursos y clases disponibles para suscriptores
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+✅ Lista de tareas (To-Do List) para seguir tu progreso
 
-## Learn More
+📚 Recursos descargables
 
-To learn more about Next.js, take a look at the following resources:
+🚧 To-Do List
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+⚙️ Tecnologías Utilizadas
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+React ⚛️
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+JavaScript 🔥
+
+TailwindCSS 💅
+
+Vite ⚡
+
+React Player 🎬
+
+📸 Vista Previa
+
+(to-add)
+
+
+📧 Contacto
+
+Para más información, podés escribirnos a: lacomarca.clubdearte@gmail.com
+
+Hecho con amor por La Comarca Club de Arte ❤️.
+

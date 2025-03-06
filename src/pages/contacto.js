@@ -36,18 +36,35 @@ export default function Contacto() {
     e.preventDefault();
     setIsLoading(true);
     
-    // Simulate API call
-    setTimeout(() => {
-      setIsLoading(false);
-      setIsSubmitted(true);
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        subject: "general",
-        message: ""
+    // For static sites, you can use a service like Formspree
+    // Replace 'YOUR_FORM_ID' with your actual form ID from Formspree
+    fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    })
+      .then(response => {
+        if (response.ok) {
+          setIsLoading(false);
+          setIsSubmitted(true);
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            subject: "general",
+            message: ""
+          });
+        } else {
+          throw new Error('Form submission failed');
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        setIsLoading(false);
+        // Handle error state here
       });
-    }, 1500);
   };
 
   return (
