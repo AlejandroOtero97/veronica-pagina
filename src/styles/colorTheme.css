@@ -1,0 +1,126 @@
+:root {
+  /* Paleta de colores para página de arte */
+  --color-primary: #4a6fa5;      /* Azul medio - Color principal */
+  --color-primary-light: #6f8dbb;
+  --color-primary-dark: #2b4c78;
+  
+  --color-secondary: #d95980;    /* Rosa vibrante - Color secundario */
+  --color-secondary-light: #e57a9b;
+  --color-secondary-dark: #b73d63;
+  
+  --color-accent: #58b89d;       /* Verde turquesa - Color acento */
+  --color-accent-light: #7cc7b3;
+  --color-accent-dark: #3e9a81;
+  
+  --color-neutral: #3c3b3e;      /* Gris oscuro - Texto principal */
+  --color-neutral-light: #6c6b70;
+  --color-neutral-dark: #252427;
+  
+  --color-background: #f9f7f3;   /* Color crema claro - Fondo */
+  --color-background-alt: #f0ece5;
+  
+  /* Sombras y efectos */
+  --shadow-soft: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Modo oscuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #2a2a30;
+    --color-background-alt: #22222b;
+    
+    --color-neutral: #e6e6ea;
+    --color-neutral-light: #cfcfd6;
+    --color-neutral-dark: #f5f5fa;
+    
+    /* Los colores primario, secundario y acento se mantienen vibrantes pero se ajustan para el modo oscuro */
+    --color-primary-light: #4a6fa5;
+    --color-primary: #3a5c8a;
+    --color-primary-dark: #2b4c78;
+    
+    --color-secondary-light: #d95980;
+    --color-secondary: #c24b70;
+    --color-secondary-dark: #a33a5c;
+    
+    --color-accent-light: #58b89d;
+    --color-accent: #4aa78d;
+    --color-accent-dark: #3e9a81;
+  }
+}
+
+/* Clases de utilidad para colores */
+.text-primary { color: var(--color-primary); }
+.text-secondary { color: var(--color-secondary); }
+.text-accent { color: var(--color-accent); }
+.bg-primary { background-color: var(--color-primary); }
+.bg-secondary { background-color: var(--color-secondary); }
+.bg-accent { background-color: var(--color-accent); }
+.border-primary { border-color: var(--color-primary); }
+.border-secondary { border-color: var(--color-secondary); }
+.border-accent { border-color: var(--color-accent); }
+
+/* Estilos específicos para elementos artísticos */
+.art-gradient {
+  background: linear-gradient(135deg, var(--color-primary-light), var(--color-secondary-light));
+}
+
+.art-panel {
+  background-color: var(--color-background);
+  border-left: 4px solid var(--color-accent);
+  padding: 1rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.art-card {
+  background-color: var(--color-background);
+  border-top: 3px solid var(--color-secondary);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.art-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-medium);
+}
+
+.btn-artistic {
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 2rem;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.btn-artistic:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.btn-artistic-secondary {
+  background-color: var(--color-secondary);
+  color: white;
+  border-radius: 2rem;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.btn-artistic-secondary:hover {
+  background-color: var(--color-secondary-dark);
+}
+
+.btn-artistic-outline {
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+  border-radius: 2rem;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-artistic-outline:hover {
+  background-color: var(--color-accent);
+  color: white;
+}

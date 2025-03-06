@@ -1,16 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  reactStrictMode: true,
   images: {
-    unoptimized: true,
+    unoptimized: true, // Necesario para exportación estática
   },
-  trailingSlash: true,
   basePath: process.env.NODE_ENV === 'production' ? '/veronica-pagina' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/veronica-pagina/' : '',
-  // Disable the API routes warning
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  output: 'export',
 }
 
 module.exports = nextConfig
