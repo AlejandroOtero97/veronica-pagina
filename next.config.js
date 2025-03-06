@@ -5,13 +5,8 @@ const nextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
-}
-
-// Apply these settings only during production build (for GitHub Pages),
-// not during local development
-if (process.env.NODE_ENV === 'production') {
-  nextConfig.basePath = '/veronica-pagina';
-  nextConfig.assetPrefix = '/veronica-pagina/';
+  basePath: process.env.NODE_ENV === 'production' ? '/veronica-pagina' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/veronica-pagina/' : '',
 }
 
 module.exports = nextConfig
