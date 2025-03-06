@@ -15,33 +15,33 @@ const geistMono = Geist_Mono({
 const courses = [
   {
     id: 1,
-    title: "Técnicas de Pintura al Óleo",
+    title: "Testeo Video 1 Oculto-10min",
     description: "Domina las técnicas clásicas y modernas de la pintura al óleo. Este curso está diseñado para artistas de todos los niveles que desean perfeccionar su técnica.",
     price: "$120.000",
     duration: "8 semanas",
-    videoId: "7YOsVaUDrY0",
+    videoId: "VmzlzTg5jzg",
     level: "Intermedio",
-    instructor: "Carmen Fuentes"
+    instructor: "Veronica Garcia"
   },
   {
     id: 2,
-    title: "Acuarela para Principiantes",
+    title: "Testeo Video 2 Publico-30min",
     description: "Aprende los fundamentos de la acuarela desde cero. Exploraremos técnicas básicas, mezcla de colores y composición para crear hermosas obras.",
     price: "$90.000",
     duration: "6 semanas",
     videoId: "3kojEoKgrTY",
     level: "Principiante",
-    instructor: "Rodrigo Méndez"
+    instructor: "Veronica Garcia"
   },
   {
     id: 3,
-    title: "Dibujo Anatómico Avanzado",
+    title: "Testeo Video 3 Privado-1 hora",
     description: "Un curso intensivo sobre anatomía humana para artistas. Enfocado en proporciones, estructura muscular y expresividad en el dibujo de figura.",
     price: "$140.000",
     duration: "10 semanas",
     videoId: "pMAhE5iR9OA",
     level: "Avanzado",
-    instructor: "Laura Vázquez"
+    instructor: "Veronica Garcia"
   },
 ];
 
