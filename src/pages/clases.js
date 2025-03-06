@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import { useState } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 
@@ -73,11 +74,11 @@ export default function Clases() {
           <span className="font-light italic ml-2">Club de Arte</span>
         </div>
         <nav className="hidden sm:flex gap-8">
-          <a href="/" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Inicio</a>
-          <a href="/cursos" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Cursos</a>
-          <a href="/clases" className="text-[#845e3f] dark:text-[#d3b88c] transition-colors">Clases</a>
-          <a href="/galeria" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Galería</a>
-          <a href="/contacto" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Contacto</a>
+          <Link href="/" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Inicio</Link>
+          <Link href="/cursos" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Cursos</Link>
+          <Link href="/clases" className="text-[#845e3f] dark:text-[#d3b88c] transition-colors">Clases</Link>
+          <Link href="/galeria" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Galería</Link>
+          <Link href="/contacto" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Contacto</Link>
         </nav>
       </header>
 
@@ -187,12 +188,12 @@ export default function Clases() {
               ¿Buscas una experiencia de aprendizaje más personalizada? Ofrecemos clases privadas adaptadas 
               a tus necesidades, nivel y horario preferido.
             </p>
-            <a 
+            <Link 
               href="/contacto" 
               className="inline-block rounded-full bg-[#845e3f] hover:bg-[#6e4e35] dark:bg-[#d3b88c] dark:hover:bg-[#c0a678] text-white dark:text-[#2c2416] px-8 py-3 transition-colors"
             >
               Solicitar información
-            </a>
+            </Link>
           </div>
         </section>
       </main>

@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 
@@ -121,11 +123,11 @@ export default function Galeria() {
           <span className="font-light italic ml-2">Club de Arte</span>
         </div>
         <nav className="hidden sm:flex gap-8">
-          <a href="/" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Inicio</a>
-          <a href="/cursos" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Cursos</a>
-          <a href="/clases" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Clases</a>
-          <a href="/galeria" className="text-[#845e3f] dark:text-[#d3b88c] transition-colors">Galería</a>
-          <a href="/contacto" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Contacto</a>
+          <Link href="/" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Inicio</Link>
+          <Link href="/cursos" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Cursos</Link>
+          <Link href="/clases" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Clases</Link>
+          <Link href="/galeria" className="text-[#845e3f] dark:text-[#d3b88c] transition-colors">Galería</Link>
+          <Link href="/contacto" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Contacto</Link>
         </nav>
       </header>
 
@@ -166,9 +168,12 @@ export default function Galeria() {
                 className="cursor-pointer group"
               >
                 <div className="aspect-[4/3] overflow-hidden rounded-lg bg-black/10 dark:bg-white/5 relative">
+                  {/* Using regular img with width/height since these are external URLs */}
                   <img 
                     src={item.image} 
                     alt={item.title} 
+                    width={800}
+                    height={600}
                     className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
@@ -203,6 +208,8 @@ export default function Galeria() {
                   <img 
                     src={selectedItem.image} 
                     alt={selectedItem.title}
+                    width={1200}
+                    height={900}
                     className="w-full object-contain max-h-[70vh]" 
                   />
                   <button 
@@ -228,12 +235,12 @@ export default function Galeria() {
           <p className="mb-8">
             En La Comarca promovemos el talento artístico. Si eres estudiante o artista y quieres formar parte de nuestra galería, contáctanos.
           </p>
-          <a 
+          <Link 
             href="/contacto" 
             className="inline-block rounded-full bg-[#845e3f] hover:bg-[#6e4e35] dark:bg-[#d3b88c] dark:hover:bg-[#c0a678] text-white dark:text-[#2c2416] px-8 py-3 transition-colors"
           >
             Háblanos de tu obra
-          </a>
+          </Link>
         </section>
       </main>
 

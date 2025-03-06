@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import { useState } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 
@@ -64,11 +65,11 @@ export default function Contacto() {
           <span className="font-light italic ml-2">Club de Arte</span>
         </div>
         <nav className="hidden sm:flex gap-8">
-          <a href="/" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Inicio</a>
-          <a href="/cursos" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Cursos</a>
-          <a href="/clases" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Clases</a>
-          <a href="/galeria" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Galería</a>
-          <a href="/contacto" className="text-[#845e3f] dark:text-[#d3b88c] transition-colors">Contacto</a>
+          <Link href="/" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Inicio</Link>
+          <Link href="/cursos" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Cursos</Link>
+          <Link href="/clases" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Clases</Link>
+          <Link href="/galeria" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Galería</Link>
+          <Link href="/contacto" className="text-[#845e3f] dark:text-[#d3b88c] transition-colors">Contacto</Link>
         </nav>
       </header>
 

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 
 const geistSans = Geist({
@@ -22,11 +23,11 @@ export default function Home() {
           <span className="font-light italic ml-2">Club de Arte</span>
         </div>
         <nav className="hidden sm:flex gap-8">
-          <a href="/" className="text-[#845e3f] dark:text-[#d3b88c] transition-colors">Inicio</a>
-          <a href="/cursos" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Cursos</a>
-          <a href="/clases" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Clases</a>
-          <a href="/galeria" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Galería</a>
-          <a href="/contacto" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Contacto</a>
+          <Link href="/" className="text-[#845e3f] dark:text-[#d3b88c] transition-colors">Inicio</Link>
+          <Link href="/cursos" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Cursos</Link>
+          <Link href="/clases" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Clases</Link>
+          <Link href="/galeria" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Galería</Link>
+          <Link href="/contacto" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Contacto</Link>
         </nav>
       </header>
 
@@ -91,7 +92,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold mb-10 text-center">Lo que dicen nuestros artistas</h2>
             <div className="max-w-4xl mx-auto">
               <blockquote className="italic text-lg text-center">
-                "La Comarca ha sido un descubrimiento maravilloso para mí. No solo he aprendido nuevas técnicas, sino que he encontrado una comunidad que me inspira cada día a seguir creando."
+                &ldquo;La Comarca ha sido un descubrimiento maravilloso para mí. No solo he aprendido nuevas técnicas, sino que he encontrado una comunidad que me inspira cada día a seguir creando.&rdquo;
                 <footer className="mt-4 font-normal text-base opacity-70">María González, pintora</footer>
               </blockquote>
             </div>

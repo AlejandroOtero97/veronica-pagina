@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 
 const geistSans = Geist({
@@ -60,11 +61,11 @@ export default function Cursos() {
           <span className="font-light italic ml-2">Club de Arte</span>
         </div>
         <nav className="hidden sm:flex gap-8">
-          <a href="/" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Inicio</a>
-          <a href="/cursos" className="text-[#845e3f] dark:text-[#d3b88c] transition-colors">Cursos</a>
-          <a href="/clases" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Clases</a>
-          <a href="/galeria" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Galería</a>
-          <a href="/contacto" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Contacto</a>
+          <Link href="/" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Inicio</Link>
+          <Link href="/cursos" className="text-[#845e3f] dark:text-[#d3b88c] transition-colors">Cursos</Link>
+          <Link href="/clases" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Clases</Link>
+          <Link href="/galeria" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Galería</Link>
+          <Link href="/contacto" className="hover:text-[#845e3f] dark:hover:text-[#d3b88c] transition-colors">Contacto</Link>
         </nav>
       </header>
 
@@ -128,12 +129,12 @@ export default function Cursos() {
           <div className="mt-16 p-8 bg-[#845e3f]/5 dark:bg-[#d3b88c]/5 rounded-xl text-center">
             <h2 className="text-2xl font-bold mb-4">¿No encuentras lo que buscas?</h2>
             <p className="mb-6">Contamos con más cursos disponibles y también ofrecemos programas personalizados.</p>
-            <a 
+            <Link 
               href="/contacto" 
               className="inline-block rounded-full bg-[#845e3f] hover:bg-[#6e4e35] dark:bg-[#d3b88c] dark:hover:bg-[#c0a678] text-white dark:text-[#2c2416] px-8 py-3 transition-colors"
             >
               Consultar opciones
-            </a>
+            </Link>
           </div>
         </section>
       </main>
