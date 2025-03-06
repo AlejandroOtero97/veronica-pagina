@@ -38,10 +38,3 @@ React Player 🎬
 
 (to-add)
 
-
-📧 Contacto
-
-Para más información, podés escribirnos a: lacomarca.clubdearte@gmail.com
-
-Hecho con amor por La Comarca Club de Arte ❤️.
-
