@@ -36,5 +36,4 @@ React Player 🎬
 
 📸 Vista Previa
 
-(to-add)
 
